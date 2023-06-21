@@ -1,0 +1,19 @@
+student_number = 0
+total_score = 0
+while True:
+    score = int(input('Enter student score (or -25 to quit): '))
+    if score != -25:
+        total_score = total_score + score
+        student_number += 1
+    else:
+        average_score = total_score / student_number
+        print('''
+        ******************************************************************
+                    Aso Rock Secondary School, Abuja Nigeria
+        ******************************************************************
+        Class: SSS 3
+        Number of Student in class:''', student_number,'''
+        Total score:''', total_score,'''
+        Average Score:''', average_score,'''
+        ******************************************************************''')
+        exit()
