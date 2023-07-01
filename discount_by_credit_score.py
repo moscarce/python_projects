@@ -3,7 +3,7 @@ if price < 0:
     print('Invalid price (Price of good(s) can\'t be a negative number)')
     exit()
 elif price == 0:
-    print('The good(s) is not free, please put a valid number')
+    print('The good(s) is not free, please put a valid price')
     exit()
 credit_score = int(input('Enter 1 or 2 to know if you have a good credit score: '))
 if credit_score == 1:
