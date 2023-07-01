@@ -4,4 +4,5 @@ def multiplication_table(num):
             print('%i X %i = %-4i' %(t,x, x*t),end='\t\t')
         print()
 
+
 multiplication_table(9)
