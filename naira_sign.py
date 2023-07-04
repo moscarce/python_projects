@@ -1,7 +1,21 @@
-# for y in range(4):
-#     for x in range(1,10):
-#         print('# ' * x) if y % 3 == 0 else print('# ' * (10 - x))
-#     print(end='')
+for a in range(10):
+    for b in range(a + 1):
+        print("#", end=" ")
+    for b in range(10 - a):
+        print(" ", end=" ")
+    for b in range(10 - a):
+        print("#", end=" ")
+    for b in range(a+1):
+        print(" ", end=" ")
+    for b in range(a + 1):
+        print(" ", end=" ")
+    for b in range(10-a):
+        print("#", end=" ")
+    for b in range(10 - a):
+        print(" ", end=" ")
+    for b in range(a+1):
+        print("#", end=" ")
+    print(" ")
 
 picture = [
 [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
