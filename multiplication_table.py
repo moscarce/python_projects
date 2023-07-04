@@ -1,4 +1,4 @@
-def multiplication_table(num = int(input('please use a positive integer that is greater than: '))):
+def multiplication_table(num):
     if num < 1:
         print('please use a positive integer that is greater than ')
     for x in range(1,13):
@@ -7,4 +7,4 @@ def multiplication_table(num = int(input('please use a positive integer that is 
         print()
 
 
-multiplication_table()
+multiplication_table(10)
