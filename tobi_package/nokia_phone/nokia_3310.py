@@ -32,15 +32,15 @@ def home():
         *Select a function using the number beside it*
     *****************************************************
     ''')
-    function = int(input('Enter number: '))
-    if function == 1:
+    function = input('Enter number: ')
+    if function == '1':
         phonebook()
-    elif function == 2:
+    elif function == '2':
         messages()
-    elif function == 3:
+    elif function == '3':
         under_construction('Chat')
         return home()
-    elif function == 4:
+    elif function == '4':
         def call_register():
             print('''
                     *****************************************************
@@ -59,20 +59,20 @@ def home():
                        *Select a function using the number beside it*
                     *****************************************************
                     ''')
-            function = int(input('Enter number: '))
-            if function == 1:
+            function = input('Enter number: ')
+            if function == '1':
                 under_construction('Missed calls')
                 return call_register()
-            elif function == 2:
+            elif function == '2':
                 under_construction('Received calls')
                 return call_register()
-            elif function == 3:
+            elif function == '3':
                 under_construction('Dialled numbers')
                 return call_register()
-            elif function == 4:
+            elif function == '4':
                 under_construction('Erase recent call lists')
                 return call_register()
-            elif function == 5:
+            elif function == '5':
                 def show_call_duration():
                     print('''
                             *****************************************************
@@ -89,30 +89,30 @@ def home():
                                *Select a function using the number beside it*
                             *****************************************************
                             ''')
-                    function = int(input('Enter number: '))
-                    if function == 1:
+                    function = input('Enter number: ')
+                    if function == '1':
                         under_construction('Last call duration')
                         return show_call_duration()
-                    elif function == 2:
+                    elif function == '2':
                         under_construction('All calls duration')
                         return show_call_duration()
-                    elif function == 3:
+                    elif function == '3':
                         under_construction('Received calls duration')
                         return show_call_duration()
-                    elif function == 4:
+                    elif function == '4':
                         under_construction('Dialled calls duration')
                         return show_call_duration()
-                    elif function == 5:
+                    elif function == '5':
                         under_construction('Clear timers')
                         return show_call_duration()
-                    elif function == 6:
+                    elif function == '6':
                         return call_register()
-                    elif function == 7:
+                    elif function == '7':
                         return home()
                     else:
                         return show_call_duration()
                 show_call_duration()
-            elif function == 6:
+            elif function == '6':
                 def show_call_cost():
                     print('''
                             *****************************************************
@@ -125,24 +125,24 @@ def home():
                                *Select a function using the number beside it*
                             *****************************************************
                             ''')
-                    function = int(input('Enter number: '))
-                    if function == 1:
+                    function = input('Enter number: ')
+                    if function == '1':
                         under_construction('Last call cost')
                         return show_call_cost()
-                    elif function == 2:
+                    elif function == '2':
                         under_construction('All calls cost')
                         return show_call_cost()
-                    elif function == 3:
+                    elif function == '3':
                         under_construction('Clear counters')
                         return show_call_cost()
-                    elif function == 4:
+                    elif function == '4':
                         return call_register()
-                    elif function == 5:
+                    elif function == '5':
                         return home()
                     else:
                         return show_call_cost()
                 show_call_cost()
-            elif function == 7:
+            elif function == '7':
                 def call_cost_settings():
                     print('''
                             *****************************************************
@@ -156,29 +156,29 @@ def home():
                                *Select a function using the number beside it*
                             *****************************************************
                             ''')
-                    function = int(input('Enter number: '))
-                    if function == 1:
+                    function = input('Enter number: ')
+                    if function == '1':
                         under_construction('Call cost limit')
                         return call_cost_settings()
-                    elif function == 2:
+                    elif function == '2':
                         under_construction('Show cost in')
                         return call_cost_settings()
-                    elif function == 3:
+                    elif function == '3':
                         return call_register()
-                    elif function == 4:
+                    elif function == '4':
                         return home()
                     else:
                         return call_cost_settings()
                 call_cost_settings()
-            elif function == 8:
+            elif function == '8':
                 under_construction('Prepaid credit')
                 return call_register()
-            elif function == 9:
+            elif function == '9':
                 return home()
             else:
                 return call_register()
         call_register()
-    elif function == 5:
+    elif function == '5':
         def tone():
             print('''
                     *****************************************************
@@ -198,40 +198,40 @@ def home():
                        *Select a function using the number beside it*
                     *****************************************************
                     ''')
-            function = int(input('Enter number: '))
-            if function == 1:
+            function = input('Enter number: ')
+            if function == '1':
                 under_construction('Ringing tone')
                 return tone()
-            elif function == 2:
+            elif function == '2':
                 under_construction('Ringing volume')
                 return tone()
-            elif function == 3:
+            elif function == '3':
                 under_construction('Incoming call alert')
                 return tone()
-            elif function == 4:
+            elif function == '4':
                 under_construction('Composer')
                 return tone()
-            elif function == 5:
+            elif function == '5':
                 under_construction('Message alert tone')
                 return tone()
-            elif function == 6:
+            elif function == '6':
                 under_construction('Keypad tones')
                 return tone()
-            elif function == 7:
+            elif function == '7':
                 under_construction('Warning and game tones')
                 return tone()
-            elif function == 8:
+            elif function == '8':
                 under_construction('Vibrating alert')
                 return tone()
-            elif function == 9:
+            elif function == '9':
                 under_construction('Screen saver')
                 return tone()
-            elif function == 10:
+            elif function == '10':
                 return home()
             else:
                 return tone()
         tone()
-    elif function == 6:
+    elif function == '6':
         def settings():
             print('''
                     *****************************************************
@@ -246,8 +246,8 @@ def home():
                        *Select a function using the number beside it*
                     *****************************************************
                     ''')
-            function = int(input('Enter number: '))
-            if function == 1:
+            function = input('Enter number: ')
+            if function == '1':
                 def call_settings():
                     print('''
                             *****************************************************
@@ -265,33 +265,33 @@ def home():
                                *Select a function using the number beside it*
                             *****************************************************
                             ''')
-                    function = int(input('Enter number: '))
-                    if function == 1:
+                    function = input('Enter number: ')
+                    if function == '1':
                         under_construction('Automatic Redial')
                         return call_settings()
-                    elif function == 2:
+                    elif function == '2':
                         under_construction('Speed dialling')
                         return call_settings()
-                    elif function == 3:
+                    elif function == '3':
                         under_construction('Call waiting options')
                         return call_settings()
-                    elif function == 4:
+                    elif function == '4':
                         under_construction('Own number sending')
                         return call_settings()
-                    elif function == 5:
+                    elif function == '5':
                         under_construction('Phone line in use')
                         return call_settings()
-                    elif function == 6:
+                    elif function == '6':
                         under_construction('Automatic answer')
                         return call_settings()
-                    elif function == 7:
+                    elif function == '7':
                         return settings()
-                    elif function == 8:
+                    elif function == '8':
                         return home()
                     else:
                         return call_settings()
                 call_settings()
-            elif function == 2:
+            elif function == '2':
                 def phone_settings():
                     print('''
                             *****************************************************
@@ -309,33 +309,33 @@ def home():
                                *Select a function using the number beside it*
                             *****************************************************
                             ''')
-                    function = int(input('Enter number: '))
-                    if function == 1:
+                    function = input('Enter number: ')
+                    if function == '1':
                         under_construction('Language')
                         return phone_settings()
-                    elif function == 2:
+                    elif function == '2':
                         under_construction('Cell info display')
                         return phone_settings()
-                    elif function == 3:
+                    elif function == '3':
                         under_construction('Welcome note')
                         return phone_settings()
-                    elif function == 4:
+                    elif function == '4':
                         under_construction('Network selection')
                         return phone_settings()
-                    elif function == 5:
+                    elif function == '5':
                         under_construction('Lights')
                         return phone_settings()
-                    elif function == 6:
+                    elif function == '6':
                         under_construction('Confirm SIM service actions')
                         return phone_settings()
-                    elif function == 7:
+                    elif function == '7':
                         return settings()
-                    elif function == 8:
+                    elif function == '8':
                         return home()
                     else:
                         return phone_settings()
                 phone_settings()
-            elif function == 3:
+            elif function == '3':
                 def security_settings():
                     print('''
                             *****************************************************
@@ -353,53 +353,53 @@ def home():
                                *Select a function using the number beside it*
                             *****************************************************
                             ''')
-                    function = int(input('Enter number: '))
-                    if function == 1:
+                    function = input('Enter number: ')
+                    if function == '1':
                         under_construction('PIN code request')
                         return security_settings()
-                    elif function == 2:
+                    elif function == '2':
                         under_construction('Call  barring service')
                         return security_settings()
-                    elif function == 3:
+                    elif function == '3':
                         under_construction('Fixed dialling')
                         return security_settings()
-                    elif function == 4:
+                    elif function == '4':
                         under_construction('Closed user group')
                         return security_settings()
-                    elif function == 5:
+                    elif function == '5':
                         under_construction('Phone security')
                         return security_settings()
-                    elif function == 6:
+                    elif function == '6':
                         under_construction('Change access codes')
                         return security_settings()
-                    elif function == 7:
+                    elif function == '7':
                         return settings()
-                    elif function == 8:
+                    elif function == '8':
                         return home()
                     else:
                         return security_settings()
                 security_settings()
-            elif function == 4:
+            elif function == '4':
                 under_construction('Restore factory settings')
                 return settings()
-            elif function == 5:
+            elif function == '5':
                 return home()
             else:
                 return settings()
         settings()
-    elif function == 7:
+    elif function == '7':
         under_construction('Call divert')
         return home()
-    elif function == 8:
+    elif function == '8':
         under_construction('Games')
         return home()
-    elif function == 9:
+    elif function == '9':
         under_construction('Calculator')
         return home()
-    elif function == 10:
+    elif function == '10':
         under_construction('Reminders')
         return home()
-    elif function == 11:
+    elif function == '11':
         def clock():
             print('''
                     *****************************************************
@@ -416,37 +416,37 @@ def home():
                        *Select a function using the number beside it*
                     *****************************************************
                     ''')
-            function = int(input('Enter number: '))
-            if function == 1:
+            function = input('Enter number: ')
+            if function == '1':
                 under_construction('Alarm clock')
                 return clock()
-            elif function == 2:
+            elif function == '2':
                 under_construction('Clock settings')
                 return clock()
-            elif function == 3:
+            elif function == '3':
                 under_construction('Date settings')
                 return clock()
-            elif function == 4:
+            elif function == '4':
                 under_construction('Stopwatch')
                 return clock()
-            elif function == 5:
+            elif function == '5':
                 under_construction('Countdown timer')
                 return clock()
-            elif function == 6:
+            elif function == '6':
                 under_construction('Auto update of date and time')
                 return clock()
-            elif function == 7:
+            elif function == '7':
                 return home()
             else:
                 return clock()
         clock()
-    elif function == 12:
+    elif function == '12':
         under_construction('Profiles')
         return home()
-    elif function == 13:
+    elif function == '13':
         under_construction('SIM services')
         return home()
-    elif function == 14:
+    elif function == '14':
         exit()
     else:
         return home()
@@ -472,37 +472,37 @@ def phonebook():
         *Select a function using the number beside it*
     *****************************************************
     ''')
-    function = int(input('Enter number: '))
-    if function == 1:
+    function = input('Enter number: ')
+    if function == '1':
         under_construction('Search')
         return phonebook()
-    elif function == 2:
+    elif function == '2':
         under_construction('Service Nos.')
         return phonebook()
-    elif function == 3:
+    elif function == '3':
         under_construction('Add name')
         return phonebook()
-    elif function == 4:
+    elif function == '4':
         under_construction('Erase')
         return phonebook()
-    elif function == 5:
+    elif function == '5':
         under_construction('Edit')
         return phonebook()
-    elif function == 6:
+    elif function == '6':
         under_construction('Assign tone')
         return phonebook()
-    elif function == 7:
+    elif function == '7':
         under_construction("Send b'card")
         return phonebook()
-    elif function == 8:
+    elif function == '8':
         options()
-    elif function == 9:
+    elif function == '9':
         under_construction('Speed dials')
         return phonebook()
-    elif function == 10:
+    elif function == '10':
         under_construction('Voice tags')
         return phonebook()
-    elif function == 11:
+    elif function == '11':
         return home()
     else:
         return phonebook()
@@ -521,16 +521,16 @@ def options():
         *Select a function using the number beside it*
     *****************************************************
     ''')
-    function = int(input('Enter number: '))
-    if function == 1:
+    function = input('Enter number: ')
+    if function == '1':
         under_construction('Type of view')
         return options()
-    elif function == 2:
+    elif function == '2':
         under_construction('Memory status')
         return options()
-    elif function == 3:
+    elif function == '3':
         return phonebook()
-    elif function == 4:
+    elif function == '4':
         return home()
     else:
         print('Invalid input')
@@ -556,37 +556,37 @@ def messages():
             *Select a function using the number beside it*
         *****************************************************
         ''')
-    function = int(input('Enter number: '))
-    if function == 1:
+    function = input('Enter number: ')
+    if function == '1':
         under_construction('Write messages')
         return messages()
-    elif function == 2:
+    elif function == '2':
         under_construction('Inbox')
         return messages()
-    elif function == 3:
+    elif function == '3':
         under_construction('Outbox')
         return messages()
-    elif function == 4:
+    elif function == '4':
         under_construction('Picture messages')
         return messages()
-    elif function == 5:
+    elif function == '5':
         under_construction('Templates')
         return messages()
-    elif function == 6:
+    elif function == '6':
         under_construction('Smileys')
         return messages()
-    elif function == 7:
+    elif function == '7':
         message_settings()
-    elif function == 8:
+    elif function == '8':
         under_construction('Info service')
         return messages()
-    elif function == 9:
+    elif function == '9':
         under_construction('Voice mailbox number')
         return messages()
-    elif function == 10:
+    elif function == '10':
         under_construction('Service command editor')
         return messages()
-    elif function == 11:
+    elif function == '11':
         return home()
     else:
         return messages()
@@ -604,8 +604,8 @@ def message_settings():
         *Select a function using the number beside it*
     *****************************************************
     ''')
-    function = int(input('Enter number: '))
-    if function == 1:
+    function = input('Enter number: ')
+    if function == '1':
         def set():
             print('''
             *****************************************************
@@ -620,24 +620,24 @@ def message_settings():
                 *Select a function using the number beside it*
             *****************************************************
             ''')
-            function = int(input('Enter number: '))
-            if function == 1:
+            function = input('Enter number: ')
+            if function == '1':
                 under_construction('Message center number')
                 return set()
-            elif function == 2:
+            elif function == '2':
                 under_construction('Message sent as')
                 return set()
-            elif function == 3:
+            elif function == '3':
                 under_construction('Message validity')
                 return set()
-            elif function == 4:
+            elif function == '4':
                 return message_settings()
-            elif function == 5:
+            elif function == '5':
                 return home()
             else:
                 return set()
         set()
-    elif function == 2:
+    elif function == '2':
         def common():
             print('''
             *****************************************************
@@ -652,34 +652,34 @@ def message_settings():
                 *Select a function using the number beside it*
             *****************************************************
             ''')
-            function = int(input('Enter number: '))
-            if function == 1:
+            function = input('Enter number: ')
+            if function == '1':
                 under_construction('Delivery reports')
                 return common()
-            elif function == 2:
+            elif function == '2':
                 under_construction('Reply via same center')
                 return common()
-            elif function == 3:
+            elif function == '3':
                 under_construction('Character support')
                 return common()
-            elif function == 4:
+            elif function == '4':
                 return message_settings()
-            elif function == 5:
+            elif function == '5':
                 return home()
             else:
                 return common()
         common()
-    elif function == 3:
+    elif function == '3':
         return messages()
-    elif function == 4:
+    elif function == '4':
         return home()
     else:
         return message_settings()
 
 
 def nokia():
-    power = int(input('Enter 1 to on the phone: '))
-    if power == 1:
+    power = input('Enter 1 to on the phone: ')
+    if power == '1':
         home()
     else:
         exit()
