@@ -3,8 +3,9 @@ def under_construction(name):
     *****************************************************
                 {name}
     *****************************************************
-              UNDER
-            CONSTRUCTION
+              WORK
+               IN
+            PROGRESS
     *****************************************************
     ''')
 
@@ -110,6 +111,7 @@ def home():
                     elif function == '7':
                         return home()
                     else:
+                        print('Invalid Input')
                         return show_call_duration()
                 show_call_duration()
             elif function == '6':
@@ -140,6 +142,7 @@ def home():
                     elif function == '5':
                         return home()
                     else:
+                        print('Invalid Input')
                         return show_call_cost()
                 show_call_cost()
             elif function == '7':
@@ -168,6 +171,7 @@ def home():
                     elif function == '4':
                         return home()
                     else:
+                        print('Invalid Input')
                         return call_cost_settings()
                 call_cost_settings()
             elif function == '8':
@@ -176,6 +180,7 @@ def home():
             elif function == '9':
                 return home()
             else:
+                print('Invalid Input')
                 return call_register()
         call_register()
     elif function == '5':
@@ -229,6 +234,7 @@ def home():
             elif function == '10':
                 return home()
             else:
+                print('Invalid Input')
                 return tone()
         tone()
     elif function == '6':
@@ -289,6 +295,7 @@ def home():
                     elif function == '8':
                         return home()
                     else:
+                        print('Invalid Input')
                         return call_settings()
                 call_settings()
             elif function == '2':
@@ -333,6 +340,7 @@ def home():
                     elif function == '8':
                         return home()
                     else:
+                        print('Invalid Input')
                         return phone_settings()
                 phone_settings()
             elif function == '3':
@@ -377,6 +385,7 @@ def home():
                     elif function == '8':
                         return home()
                     else:
+                        print('Invalid Input')
                         return security_settings()
                 security_settings()
             elif function == '4':
@@ -385,6 +394,7 @@ def home():
             elif function == '5':
                 return home()
             else:
+                print('Invalid Input')
                 return settings()
         settings()
     elif function == '7':
@@ -438,6 +448,7 @@ def home():
             elif function == '7':
                 return home()
             else:
+                print('Invalid Input')
                 return clock()
         clock()
     elif function == '12':
@@ -447,8 +458,10 @@ def home():
         under_construction('SIM services')
         return home()
     elif function == '14':
+        print('Power off')
         exit()
     else:
+        print('Invalid Input')
         return home()
 
 
@@ -505,6 +518,7 @@ def phonebook():
     elif function == '11':
         return home()
     else:
+        print('Invalid Input')
         return phonebook()
 
 
@@ -589,6 +603,7 @@ def messages():
     elif function == '11':
         return home()
     else:
+        print('Invalid Input')
         return messages()
 
 def message_settings():
@@ -635,6 +650,7 @@ def message_settings():
             elif function == '5':
                 return home()
             else:
+                print('Invalid Input')
                 return set()
         set()
     elif function == '2':
@@ -667,6 +683,7 @@ def message_settings():
             elif function == '5':
                 return home()
             else:
+                print('Invalid Input')
                 return common()
         common()
     elif function == '3':
@@ -674,6 +691,7 @@ def message_settings():
     elif function == '4':
         return home()
     else:
+        print('Invalid Input')
         return message_settings()
 
 
