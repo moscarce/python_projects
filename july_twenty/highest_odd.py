@@ -15,3 +15,8 @@ def highest_odd(lst: list) -> int:
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 101]
 print(highest_odd(numbers))
+print()
+def highest_odd_one_line(lst: list)-> int:
+    num = max([i for i in lst if i % 2 == 1])
+    return num
+print(highest_odd_one_line(numbers))
