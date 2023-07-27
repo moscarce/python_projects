@@ -5,7 +5,7 @@ def myers_briggs():
     valid_name = bool(re.match(pattern,name))
     if not valid_name:
         while True:
-            name = input("(Invalid name (symbol(s) or number(s) makes the name invalid))What is your name: \n")
+            name = input("(Invalid name (symbol(s) or number(s) make the name invalid))What is your name: \n")
             valid_name = bool(re.match(pattern, name))
             if valid_name:
                 break
@@ -34,7 +34,6 @@ def myers_briggs():
              ]
 
         answers = [0 for _ in range(20)]
-        print(answers)
         count_i = 0
         count_e = 0
         count_s = 0

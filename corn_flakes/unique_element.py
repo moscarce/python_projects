@@ -3,7 +3,7 @@
 # to the list and return the list
 
 
-def unique_list(lst:list)-> list:
+def unique_list(lst)-> list:
     result = []
     for element in lst:
         if element not in result:
@@ -19,7 +19,8 @@ def unique_list(lst:list)-> list:
 numbers_list = [1,1,2,3,4,4,5]
 string_list = ['hello','peter','hello','hi','tobi',]
 unique_number_list = [4,8,9,2,7]
-unique_string_list = ['4','8','9','2','7']
+unique_string_list = ('4','8','9','2','7','7')
+
 print(unique_list(numbers_list))
 print(unique_list(string_list))
 print(unique_list(unique_number_list))
