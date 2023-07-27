@@ -1,17 +1,19 @@
-##Write a function that takes a list as parameter removes the duplicates in the list and return the list with unique element
-##iterate through the list and remove an element from the list
-##iterate through the after removing and check if any other element is equal to the removed one
-##if any other element is equal to the removed element,then you remove the element that is equal to it
-##then append the removed element back
+# Write a function that takes a list as parameter removes the duplicates in the list and return the list with unique element
+# Create an empty list in the function and iterate over the list that is passed in and add any one that is not in the empty list
+# to the list and return the list
 
-def unique_list(lst:list)->list:
+
+def unique_list(lst:list)-> list:
+    result = []
     for element in lst:
-        lst.remove(element)
-        for equal_element in lst:
-            if element == equal_element:
-                lst.remove(equal_element)
-        lst.append(element)
-    return lst
+        if element not in result:
+            result += [element]
+    return result
+
+# def unique_list(lst:list) -> list:
+#     return [element for element in lst if lst.count(element) < 2]
+
+
 
 
 numbers_list = [1,1,2,3,4,4,5]
