@@ -127,7 +127,7 @@ def myers_briggs():
                                         
                 People with this personality type are devoted altruists, ready to face slings and arrows in order to stand up for the people and
                 ideas that they believe in. This strength of conviction bolsters ENFJs’ innate leadership skills, particularly their ability to
-                guide people to work together in service of the greater good.""")
+                guide https://www.intelregion.com/news/after-darkness-comes-the-glorious-down-full-text-of-president-bola-tinubus-speech-on-nigerias-economic-challenges/?utm_source=Telegram&utm_medium=Socialpeople to work together in service of the greater good.""")
             case 'ENFP':
                 print("""
                 ENFP

@@ -15,3 +15,5 @@ for x in picture:
         elif y==0:
             print(' ',end='')
     print()
+
+
